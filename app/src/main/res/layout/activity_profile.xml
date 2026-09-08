@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:fitsSystemWindows="true" android:background="#F3F6FA">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="#142D4E" app:titleTextColor="#FFFFFF" app:navigationIconTint="#FFFFFF"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView style="@style/PortalTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forms_student_name"/>
+            <TextView style="@style/PortalSubtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="20dp" android:text="@string/forms_student_id"/>
+            <com.google.android.material.card.MaterialCardView style="@style/PortalCard" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forms_academic_details" android:textColor="#142D4E" android:textSize="18sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:lineSpacingExtra="6dp" android:text="@string/forms_academic_info" android:textColor="#182B45" android:textSize="15sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/forms_university_email_label" android:textColor="#65758B" android:textSize="13sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/forms_university_email" android:textColor="#2463A6" android:textSize="15sp" android:textIsSelectable="true"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView style="@style/PortalCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forms_contact_title" android:textColor="#142D4E" android:textSize="18sp" android:textStyle="bold"/>
+                    <TextView style="@style/PortalSubtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:text="@string/forms_contact_caption"/>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@+id/phoneLayout" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/forms_phone">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/phoneInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" android:imeOptions="actionNext" android:maxLines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@+id/alternateEmailLayout" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/forms_alternate_email">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/alternateEmailInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:imeOptions="actionDone" android:maxLines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/saveProfileButton" style="@style/PortalButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:minHeight="52dp" android:text="@string/forms_save_profile"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.button.MaterialButton android:id="@+id/logoutButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="@string/forms_logout" android:textColor="#B34B35" app:strokeColor="#B34B35"/>
+            <TextView style="@style/PortalSubtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" android:text="@string/forms_logout_note"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="forms_service_title">Service request</string>
+    <string name="forms_request_intro">How can we help?</string>
+    <string name="forms_request_caption">Send a request to the student support team. This demo records it on this device only.</string>
+    <string name="forms_request_type">Request type</string>
+    <string-array name="forms_request_types">
+        <item>Select request type</item>
+        <item>Academic</item>
+        <item>Examination</item>
+        <item>Hostel</item>
+        <item>IT Support</item>
+        <item>Library</item>
+        <item>Other</item>
+    </string-array>
+    <string name="forms_subject">Subject</string>
+    <string name="forms_description">Description (at least 10 characters)</string>
+    <string name="forms_priority">Priority</string>
+    <string name="forms_normal">Normal</string>
+    <string name="forms_urgent">Urgent</string>
+    <string name="forms_confirmation">I confirm that the information provided is correct.</string>
+    <string name="forms_submit">Submit request</string>
+    <string name="forms_latest">Latest request</string>
+    <string name="forms_no_request">No requests yet. Your latest request will appear here.</string>
+    <string name="forms_select_type">Please select a request type.</string>
+    <string name="forms_subject_error">Please enter a subject.</string>
+    <string name="forms_description_error">Please enter at least 10 characters.</string>
+    <string name="forms_priority_error">Please select Normal or Urgent priority.</string>
+    <string name="forms_confirm_error">Please confirm that the information is correct.</string>
+    <string name="forms_save_failed">The request could not be saved. Please try again.</string>
+    <string name="forms_request_submitted">Request Submitted</string>
+    <string name="forms_request_success">Request ID: %1$s\nYour request has been recorded successfully.\n\nStatus: Open. This offline demo saves the request on this device only.</string>
+    <string name="forms_done">Done</string>
+    <string name="forms_request_summary">Request ID: %1$s\nType: %2$s\nSubject: %3$s\nPriority: %4$s\nStatus: %5$s</string>
+    <string name="forms_profile_title">My profile</string>
+    <string name="forms_student_name">Aarav Sharma</string>
+    <string name="forms_student_id">Registration number · 229301234</string>
+    <string name="forms_academic_details">Academic details</string>
+    <string name="forms_academic_info">B.Tech Computer Science &amp; Engineering\nSemester 5 · Section CSE-A</string>
+    <string name="forms_university_email_label">University email</string>
+    <string name="forms_university_email">aarav.sharma@muj.manipal.edu</string>
+    <string name="forms_contact_title">Contact details</string>
+    <string name="forms_contact_caption">Keep your contact information up to date. Changes are saved only on this device.</string>
+    <string name="forms_phone">Phone number</string>
+    <string name="forms_alternate_email">Alternate email (optional)</string>
+    <string name="forms_phone_error">Enter a valid phone number with 10–15 digits.</string>
+    <string name="forms_email_error">Enter a valid email address or leave this blank.</string>
+    <string name="forms_save_profile">SAVE PROFILE</string>
+    <string name="forms_profile_saved">Profile updated successfully</string>
+    <string name="forms_logout">LOGOUT</string>
+    <string name="forms_logout_note">Logging out keeps your saved contact details and latest request on this device.</string>
+</resources>

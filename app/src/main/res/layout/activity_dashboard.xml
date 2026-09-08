@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background" android:fillViewport="true" android:fitsSystemWindows="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_university" android:contentDescription="@string/university_mark"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:text="@string/app_name" android:textStyle="bold" android:textSize="18sp"/>
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView style="@style/PortalCard" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/navy" app:strokeWidth="0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/greeting" android:textColor="@color/white" android:textSize="25sp" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/program" android:textColor="#D9E6F6" android:textSize="14sp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/student_meta" android:textColor="#D9E6F6" android:textSize="12sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.google.android.material.card.MaterialCardView style="@style/PortalCard" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginEnd="8dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:text="@string/attendance_summary" android:textSize="12sp" android:textStyle="bold" android:lineSpacingExtra="12dp" android:gravity="center" android:textColor="@color/navy"/>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView style="@style/PortalCard" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginEnd="8dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:text="@string/cgpa_summary" android:textSize="12sp" android:textStyle="bold" android:lineSpacingExtra="12dp" android:gravity="center" android:textColor="@color/navy"/>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView style="@style/PortalCard" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginEnd="0dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:text="@string/credits_summary" android:textSize="12sp" android:textStyle="bold" android:lineSpacingExtra="12dp" android:gravity="center" android:textColor="@color/navy"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/portal_modules" style="@style/PortalTitle"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="12dp" android:text="@string/dashboard_subtitle" style="@style/PortalSubtitle"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.google.android.material.button.MaterialButton android:id="@+id/attendanceButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="84dp" android:layout_marginEnd="8dp" android:text="@string/attendance" android:textAllCaps="false" android:textSize="14sp" android:padding="12dp" android:maxLines="2" app:icon="@drawable/ic_attendance" app:iconTint="@color/accent" app:iconGravity="textStart" app:backgroundTint="@color/white" app:strokeColor="#E1E7EF" app:cornerRadius="16dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/marksButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="84dp" android:layout_marginEnd="0dp" android:text="@string/marks" android:textAllCaps="false" android:textSize="14sp" android:padding="12dp" android:maxLines="2" app:icon="@drawable/ic_marks" app:iconTint="@color/accent" app:iconGravity="textStart" app:backgroundTint="@color/white" app:strokeColor="#E1E7EF" app:cornerRadius="16dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.google.android.material.button.MaterialButton android:id="@+id/timetableButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="84dp" android:layout_marginEnd="8dp" android:text="@string/timetable" android:textAllCaps="false" android:textSize="14sp" android:padding="12dp" android:maxLines="2" app:icon="@drawable/ic_timetable" app:iconTint="@color/accent" app:iconGravity="textStart" app:backgroundTint="@color/white" app:strokeColor="#E1E7EF" app:cornerRadius="16dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/coursesButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="84dp" android:layout_marginEnd="0dp" android:text="@string/courses" android:textAllCaps="false" android:textSize="14sp" android:padding="12dp" android:maxLines="2" app:icon="@drawable/ic_courses" app:iconTint="@color/accent" app:iconGravity="textStart" app:backgroundTint="@color/white" app:strokeColor="#E1E7EF" app:cornerRadius="16dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.google.android.material.button.MaterialButton android:id="@+id/noticesButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="84dp" android:layout_marginEnd="8dp" android:text="@string/notices" android:textAllCaps="false" android:textSize="14sp" android:padding="12dp" android:maxLines="2" app:icon="@drawable/ic_notices" app:iconTint="@color/accent" app:iconGravity="textStart" app:backgroundTint="@color/white" app:strokeColor="#E1E7EF" app:cornerRadius="16dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/serviceRequestButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="84dp" android:layout_marginEnd="0dp" android:text="@string/service_request" android:textAllCaps="false" android:textSize="14sp" android:padding="12dp" android:maxLines="2" app:icon="@drawable/ic_service_request" app:iconTint="@color/accent" app:iconGravity="textStart" app:backgroundTint="@color/white" app:strokeColor="#E1E7EF" app:cornerRadius="16dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.google.android.material.button.MaterialButton android:id="@+id/profileButton" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="84dp" android:layout_marginEnd="8dp" android:text="@string/profile" android:textAllCaps="false" android:textSize="14sp" android:padding="12dp" android:maxLines="2" app:icon="@drawable/ic_profile" app:iconTint="@color/accent" app:iconGravity="textStart" app:backgroundTint="@color/white" app:strokeColor="#E1E7EF" app:cornerRadius="16dp"/>
+            <Space android:layout_width="0dp" android:layout_weight="1" android:layout_height="1dp"/>
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView android:id="@+id/upcomingCard" style="@style/PortalCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:clickable="true" android:focusable="true">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upcoming" android:textSize="10sp" android:letterSpacing="0.12" android:textColor="@color/accent"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/upcoming_class" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/upcoming_details" android:textSize="12sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:id="@+id/noticeCard" style="@style/PortalCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:clickable="true" android:focusable="true">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/latest_notice" android:textSize="10sp" android:letterSpacing="0.12" android:textColor="@color/accent"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/notice_headline" android:textSize="16sp" android:textStyle="bold"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

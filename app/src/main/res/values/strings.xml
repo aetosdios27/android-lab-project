@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MUJ Student Portal</string>
+    <string name="tagline">Your academics, in one place.</string>
+    <string name="registration_number">Registration number</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">LOGIN</string>
+    <string name="demo_login">Demo Login\nRegistration No: 229301234\nPassword: muj123</string>
+    <string name="welcome">Welcome back</string>
+    <string name="login_subtitle">Sign in to your student workspace</string>
+    <string name="offline_note">OFFLINE ACADEMIC PROTOTYPE</string>
+    <string name="registration_required">Enter your registration number</string>
+    <string name="password_required">Enter your password</string>
+    <string name="invalid_credentials">Incorrect registration number or password</string>
+    <string name="greeting">Good Morning, Aarav</string>
+    <string name="program">B.Tech Computer Science &amp; Engineering</string>
+    <string name="student_meta">Semester 5  •  Student ID: 229301234</string>
+    <string name="portal_modules">Your portal</string>
+    <string name="dashboard_subtitle">Everything you need for your semester</string>
+    <string name="attendance">Attendance</string>
+    <string name="marks">Marks</string>
+    <string name="timetable">Timetable</string>
+    <string name="courses">Courses</string>
+    <string name="notices">Notices</string>
+    <string name="service_request">Service Request</string>
+    <string name="profile">Profile</string>
+    <string name="upcoming">UPCOMING CLASS</string>
+    <string name="upcoming_class">Computer Networks</string>
+    <string name="upcoming_details">10:00 AM – 11:00 AM  •  Room AB1-204</string>
+    <string name="latest_notice">LATEST NOTICE</string>
+    <string name="notice_headline">Mid Semester Examination Schedule Released</string>
+    <string name="attendance_summary">ATTENDANCE\n86%</string>
+    <string name="cgpa_summary">CGPA\n8.24</string>
+    <string name="credits_summary">CREDITS\n18 / 24</string>
+    <string name="back">Back</string>
+    <string name="university_mark">University portal emblem</string>
+</resources>
