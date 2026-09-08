@@ -13,6 +13,8 @@ A fully offline university Android project inspired by Manipal University Jaipur
 - Validated service request form with Spinner, RadioGroup and CheckBox; incrementing local request IDs and persistent latest request.
 - Editable phone and alternate email, local saving and logout that clears the navigation task.
 - No internet permission, remote images, Firebase, university APIs or network services.
+- Cohesive navy/teal styling, original offline vector artwork, and centered, content-fitting cards and controls.
+- Dashboard rows adapt to compact widths and larger fonts; long inputs and dialog titles wrap rather than truncate.
 
 ## Screens
 
@@ -146,11 +148,13 @@ The debug APK was built and installed on an Android 15 / API 35 Pixel 5 emulator
 - Profile rejects invalid phone/email; saved edits survived screen reopening and process restart.
 - Remembered login survives force-stop/relaunch; unchecked Remember me returns to Login after process termination.
 - Logout removes the dashboard from the back stack.
-- Login, dashboard, attendance, request dialog and profile were visually inspected.
+- All ten redesigned screens were visually inspected, including compact 320dp width with 1.3× system font scaling.
+- Long request subjects, alternate emails, validation captions and notice titles were checked for centered wrapping.
+- Dashboard cards stack on compact screens instead of breaking labels mid-word; the splash has portrait and landscape compositions.
 
 Verification used external throwaway UI automation, not a production dependency or a mocked backend. Runtime checks cover API 35; older supported Android versions were not separately exercised.
 
-Final verification command: `./gradlew --offline :app:assembleDebug :app:lintDebug` — **BUILD SUCCESSFUL**. Android lint reports **0 errors and 27 non-blocking warnings**, including dependency-update suggestions, the explicitly requested custom SplashActivity, and presentation/localization recommendations. The report is generated at `app/build/reports/lint-results-debug.html`. No lint errors or warnings were suppressed.
+Final verification command: `./gradlew --offline :app:assembleDebug :app:lintDebug` — **BUILD SUCCESSFUL**. Android lint reports no errors; remaining non-blocking warnings include dependency-update suggestions, the explicitly requested custom SplashActivity, and presentation/localization recommendations. The report is generated at `app/build/reports/lint-results-debug.html`. No lint errors or warnings were suppressed.
 
 ## Future Scope
 

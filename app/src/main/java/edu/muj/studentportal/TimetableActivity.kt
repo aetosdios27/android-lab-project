@@ -22,8 +22,8 @@ class TimetableActivity : BaseActivity() {
         val timetableAdapter = TimetableAdapter()
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = timetableAdapter
-        binding.daySpinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, MockData.weekdays).apply {
-            setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.daySpinner.adapter = ArrayAdapter(this, R.layout.item_spinner_selection, MockData.weekdays).apply {
+            setDropDownViewResource(R.layout.item_spinner_dropdown)
         }
         val selectedDay = (savedInstanceState?.getInt(SELECTED_DAY, 0) ?: 0).coerceIn(MockData.weekdays.indices)
         binding.daySpinner.setSelection(selectedDay)

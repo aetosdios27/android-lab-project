@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="navy">#142D4E</color>
-    <color name="background">#F3F6FA</color>
+    <color name="navy">#112D43</color>
+    <color name="background">#F4F7FA</color>
     <color name="white">#FFFFFF</color>
-    <color name="ink">#182B45</color>
-    <color name="muted">#65758B</color>
-    <color name="accent">#2463A6</color>
-    <color name="safe">#147D64</color>
-    <color name="warning">#B34B35</color>
+    <color name="ink">#142D40</color>
+    <color name="muted">#627789</color>
+    <color name="accent">#087F8C</color>
+    <color name="line">#DFE7EE</color>
+    <color name="tealTint">#E5F3F1</color>
+    <color name="blue">#3867D6</color>
+    <color name="blueTint">#EDF2FF</color>
+    <color name="gold">#A96732</color>
+    <color name="amberTint">#FFF2DE</color>
 </resources>

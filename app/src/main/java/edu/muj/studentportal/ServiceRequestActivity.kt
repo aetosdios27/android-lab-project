@@ -6,6 +6,7 @@ import android.widget.Toast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import edu.muj.studentportal.databinding.ActivityServiceRequestBinding
 import java.util.Locale
+import edu.muj.studentportal.ui.fitTitle
 
 class ServiceRequestActivity : BaseActivity() {
     private lateinit var binding: ActivityServiceRequestBinding
@@ -21,8 +22,8 @@ class ServiceRequestActivity : BaseActivity() {
         binding.requestType.adapter = ArrayAdapter.createFromResource(
             this,
             R.array.forms_request_types,
-            android.R.layout.simple_spinner_item
-        ).also { it.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
+            R.layout.item_spinner_selection
+        ).also { it.setDropDownViewResource(R.layout.item_spinner_dropdown) }
         showLatestRequest()
         binding.submitButton.setOnClickListener { submitRequest() }
         // Android restores all identified form views after onCreate on rotation.
@@ -101,7 +102,7 @@ class ServiceRequestActivity : BaseActivity() {
             .setTitle(R.string.forms_request_submitted)
             .setMessage(getString(R.string.forms_request_success, requestId))
             .setPositiveButton(R.string.forms_done, null)
-            .show()
+            .show().fitTitle()
     }
 
     private fun showLatestRequest() {

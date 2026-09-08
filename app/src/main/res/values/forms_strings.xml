@@ -2,7 +2,7 @@
 <resources>
     <string name="forms_service_title">Service request</string>
     <string name="forms_request_intro">How can we help?</string>
-    <string name="forms_request_caption">Send a request to the student support team. This demo records it on this device only.</string>
+    <string name="forms_request_caption">Tell us what you need help with. This offline demo keeps your request on this device, not with the support team.</string>
     <string name="forms_request_type">Request type</string>
     <string-array name="forms_request_types">
         <item>Select request type</item>
@@ -14,8 +14,7 @@
         <item>Other</item>
     </string-array>
     <string name="forms_subject">Subject</string>
-    <string name="forms_description">Description (at least 10 characters)</string>
-    <string name="forms_priority">Priority</string>
+    <string name="forms_description">Description</string>
     <string name="forms_normal">Normal</string>
     <string name="forms_urgent">Urgent</string>
     <string name="forms_confirmation">I confirm that the information provided is correct.</string>
@@ -35,18 +34,30 @@
     <string name="forms_profile_title">My profile</string>
     <string name="forms_student_name">Aarav Sharma</string>
     <string name="forms_student_id">Registration number · 229301234</string>
-    <string name="forms_academic_details">Academic details</string>
     <string name="forms_academic_info">B.Tech Computer Science &amp; Engineering\nSemester 5 · Section CSE-A</string>
     <string name="forms_university_email_label">University email</string>
     <string name="forms_university_email">aarav.sharma@muj.manipal.edu</string>
     <string name="forms_contact_title">Contact details</string>
-    <string name="forms_contact_caption">Keep your contact information up to date. Changes are saved only on this device.</string>
+    <string name="forms_contact_caption">A little upkeep goes a long way. Your changes stay saved on this device only.</string>
     <string name="forms_phone">Phone number</string>
-    <string name="forms_alternate_email">Alternate email (optional)</string>
+    <string name="forms_alternate_email">Alternate email</string>
     <string name="forms_phone_error">Enter a valid phone number with 10–15 digits.</string>
     <string name="forms_email_error">Enter a valid email address or leave this blank.</string>
-    <string name="forms_save_profile">SAVE PROFILE</string>
+    <string name="forms_save_profile">Save changes</string>
     <string name="forms_profile_saved">Profile updated successfully</string>
-    <string name="forms_logout">LOGOUT</string>
+    <string name="forms_logout">Log out</string>
     <string name="forms_logout_note">Logging out keeps your saved contact details and latest request on this device.</string>
+    <string name="forms_support_eyebrow">STUDENT SUPPORT</string>
+    <string name="forms_details_step">01 / REQUEST DETAILS</string>
+    <string name="forms_description_helper">Include the details we should know. Minimum 10 characters.</string>
+    <string name="forms_priority_step">02 / PRIORITY</string>
+    <string name="forms_priority_caption">Choose how time-sensitive your request is.</string>
+    <string name="forms_record_eyebrow">YOUR REQUEST RECORD</string>
+    <string name="forms_record_caption">Local record · Offline demo</string>
+    <string name="forms_identity_eyebrow">MANIPAL UNIVERSITY JAIPUR</string>
+    <string name="forms_avatar_initials">AS</string>
+    <string name="forms_verified_student">Verified student · Demo</string>
+    <string name="forms_academic_eyebrow">ACADEMIC DETAILS</string>
+    <string name="forms_personal_eyebrow">MAKE IT YOURS</string>
+    <string name="forms_email_helper">Optional. Leave blank if you prefer.</string>
 </resources>

@@ -22,8 +22,6 @@ class NoticeAdapter(private val items: List<Notice>, private val onNoticeClick: 
         binding.eyebrow.text = item.category
         binding.title.text = item.title
         binding.detail.text = item.description
-        binding.detail.maxLines = 2
-        binding.detail.ellipsize = android.text.TextUtils.TruncateAt.END
         binding.status.text = item.date
         binding.root.setOnClickListener { onNoticeClick(item) }
     }

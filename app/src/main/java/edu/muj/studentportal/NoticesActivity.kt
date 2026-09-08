@@ -6,6 +6,7 @@ import edu.muj.studentportal.adapter.NoticeAdapter
 import edu.muj.studentportal.data.MockData
 import edu.muj.studentportal.databinding.ActivityNoticesBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import edu.muj.studentportal.ui.fitTitle
 
 class NoticesActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +22,7 @@ class NoticesActivity : BaseActivity() {
                 .setTitle(notice.title)
                 .setMessage(getString(R.string.academic_notice_meta, notice.date, notice.category) + "\n\n" + notice.description)
                 .setPositiveButton(R.string.academic_close, null)
-                .show()
+                .show().fitTitle()
         }
     }
 }

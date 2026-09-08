@@ -21,8 +21,8 @@ class TimetableAdapter(private var items: List<TimetableItem> = emptyList()) : R
         val context = binding.root.context
         binding.eyebrow.text = context.getString(R.string.academic_time, item.startTime, item.endTime)
         binding.title.text = item.subject
-        binding.detail.text = context.getString(R.string.academic_room, item.room, item.faculty)
-        binding.status.visibility = android.view.View.GONE
+        binding.detail.text = context.getString(R.string.academic_room_label, item.room)
+        binding.status.text = item.faculty
     }
 
     fun showDay(schedule: List<TimetableItem>) {
