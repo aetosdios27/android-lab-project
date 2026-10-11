@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:icon="@drawable/ic_university" android:title="@string/home"/>
+    <item android:id="@+id/nav_study" android:icon="@drawable/ic_courses" android:title="@string/study"/>
+    <item android:id="@+id/nav_notices" android:icon="@drawable/ic_notices" android:title="@string/notices"/>
+    <item android:id="@+id/nav_requests" android:icon="@drawable/ic_service_request" android:title="@string/requests"/>
+    <item android:id="@+id/nav_account" android:icon="@drawable/ic_profile" android:title="@string/account"/>
+</menu>

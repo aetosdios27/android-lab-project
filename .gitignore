@@ -1,6 +1,12 @@
 *.iml
 .gradle/
+.kotlin/
 .idea/
 local.properties
 **/build/
 .externalNativeBuild/
+captures/
+
+# Keep documentation and review artifacts out of the public repository.
+*.[mM][dD]
+docs/

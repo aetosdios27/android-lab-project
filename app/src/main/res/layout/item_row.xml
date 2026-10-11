@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rowCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" app:cardCornerRadius="12dp" app:cardElevation="0dp" app:cardBackgroundColor="@color/surface" app:strokeColor="@color/outline" app:strokeWidth="1dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:minHeight="64dp">
+        <TextView android:id="@+id/meta" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Material3.LabelMedium" android:textColor="@color/secondary_ink" android:layout_marginBottom="6dp"/>
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Material3.TitleMedium" android:textColor="@color/ink"/>
+        <TextView android:id="@+id/body" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Material3.BodyMedium" android:textColor="@color/secondary_ink" android:layout_marginTop="6dp"/>
+        <TextView android:id="@+id/badge" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.Material3.LabelLarge" android:textColor="@color/primary" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

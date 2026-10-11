@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" ?>
 <resources>
-    <string name="app_name">MUJ Student Portal</string>
-    <string name="tagline">Your academics, in one place.</string>
-    <string name="registration_number">Registration number</string>
+    <string name="app_name">MUJ Student Management Portal</string>
+    <string name="brand">MUJ Portal</string>
+    <string name="sign_in">Sign in</string>
+    <string name="login_intro">Your academic workspace</string>
+    <string name="login_explanation">Sign in to access your classes, academic records and requests.</string>
+    <string name="account_id">Registration or staff ID</string>
     <string name="password">Password</string>
-    <string name="remember_me">Remember me</string>
-    <string name="registration_required">Enter your registration number</string>
-    <string name="password_required">Enter your password</string>
-    <string name="invalid_credentials">Incorrect registration number or password</string>
-    <string name="program">B.Tech Computer Science &amp; Engineering</string>
-    <string name="attendance">Attendance</string>
-    <string name="marks">Marks</string>
-    <string name="timetable">Timetable</string>
-    <string name="courses">Courses</string>
+    <string name="remember">Remember this account</string>
+    <string name="demo_accounts">View demo accounts</string>
+    <string name="offline_note">Academic prototype · Offline data on this device</string>
+    <string name="home">Home</string>
+    <string name="study">Study</string>
     <string name="notices">Notices</string>
-    <string name="service_request">Service Request</string>
-    <string name="profile">Profile</string>
-    <string name="upcoming_class">Computer Networks</string>
-    <string name="notice_headline">Mid Semester Examination Schedule Released</string>
-    <string name="back">Back</string>
+    <string name="requests">Requests</string>
+    <string name="account">Account</string>
+    <string name="back">Navigate back</string>
+    <string name="login_id_error">Enter your registration or staff ID</string>
+    <string name="login_password_error">Enter your password</string>
+    <string name="invalid_credentials">ID or password is incorrect. Check the demo accounts if needed.</string>
 </resources>

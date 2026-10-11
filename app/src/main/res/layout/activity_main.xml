@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mainRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:background="@color/canvas" app:titleTextColor="@color/ink" app:subtitleTextColor="@color/secondary_ink" app:subtitleTextAppearance="@style/PortalToolbarSubtitle"/>
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true"/>
+    <androidx.fragment.app.FragmentContainerView android:id="@+id/content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/navigation" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/surface" app:backgroundTint="@color/surface" app:menu="@menu/navigation" app:labelVisibilityMode="labeled" app:itemIconTint="@color/primary" app:itemTextColor="@color/primary"/>
+</LinearLayout>
